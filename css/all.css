@@ -166,10 +166,17 @@ body {
         padding-top: 12px; }
   #main #contents {
     float: left;
-    width: 660px; }
+    width: 660px;
+    text-align: justify; }
     #main #contents h2.tabheading {
       font-size: 1.5em;
       margin-bottom: 20px; }
+    #main #contents p {
+      margin: 20px 0; }
+    #main #contents a {
+      text-decoration: none; }
+      #main #contents a:hover {
+        text-decoration: underline; }
   #main #contactus {
     float: right;
     width: 300px;

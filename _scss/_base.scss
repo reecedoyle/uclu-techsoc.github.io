@@ -96,10 +96,23 @@ body {
     #contents {
         float: left;
         width: $contents_width;
+        text-align: justify;
 
         h2.tabheading {
             font-size: 1.5em;
             margin-bottom: 20px;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 
