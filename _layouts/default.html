@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <html>
     <head>
         <title>UCLU techSociety | {% if page.title %}{{ page.title }}{% else %}That's techSoc to you{% endif %}</title>
         <link href="/css/all.css" rel="stylesheet" type="text/css" />
+        <script src="//www.google.com/jsapi?key=AIzaSyA5m1Nc8ws2BbmPRwKu5gFradvD_hgq6G0" type="text/javascript"></script>
         <script type="text/javascript" src="/js/all.js"></script>
     </head>
     <body class="{{ page.page }} {{ page.tab }} light">
@@ -25,31 +27,10 @@
                 </ul>
             </div>
         </div>
+
         <div id="main">
-            {{ content }}
-            <div id="contactus">
-                <h2>Contact Us</h2>
-                <ol>
-                    <li>Get in touch</li>
-                    <li>Find out what we're up to</li>
-                    <li>???</li>
-                    <li>Profit</li>
-                </ol>
-                <div class="logos">
-                    <a href="{% include facebook.href %}"><img alt="Visit our Facebook Group" title="Visit our Facebook Group" src="/images/facebook.png" /></a>
-                    <a href="http://twitter.com/uclutechsoc"><img alt="Follow our Twitter" title="Follow our Twitter" src="/images/twitter.png" /></a>
-                    <a href="mailto:president@uclutech.com"><img alt="Email our president" title="Email our president" src="/images/email.png" /></a>
-                </div>
-                <h3>Mailing List</h3>
-                <p>
-                    Or maybe you want to get UCLU techSoc news in your inbox every week? Our president drones on for pages and pages about what we're up to in the coming week. We never read it.
-                    <form method="post" action="http://groupspaces.com/techsoc/subscribe/" target="_blank">
-                        <input name="email" type="text" placeholder="me@example.com" required="required"/>
-                        <input type="hidden" name="sub_subscribe" value="1" />
-                        <input value="Join TechSoc!" class="button" type="submit" />
-                    </form>
-                </p>
-            </div>
+            {{ content }}    
         </div>
+
     </body>
 </html>

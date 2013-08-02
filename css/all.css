@@ -141,6 +141,73 @@ body {
         color: inherit;
         padding-bottom: 5px; }
 
+#tweets_style { 
+  position: relative;
+  width: auto;
+  margin: 10px; 
+  padding: 15px;
+  text-align: left; }
+#tweets_style h1 {
+    font-family: 'UbuntuBold';
+    font-size: 2em; }
+#tweets_style h2 {
+  font-family: 'UbuntuBold';
+    font-size: 1.5em; }
+  #tweets_style h3 {
+  font-family: 'UbuntuBold';
+    font-size: 1em; }
+#tweets_style h4 {
+  font-family: 'UbuntuBold';
+    font-size: 1em; }
+
+#tweets_date {
+  position: right;
+  width: auto;
+  margin: 1px 1px; 
+  padding: 2px;
+  text-align: right;}
+
+
+#logo_img_left { 
+  position: left;
+  width: 130px;
+  border-style:solid;
+  border-width:5px;
+  text-align: left; }
+
+#logo_img_right {
+  position: right;
+  width: 130px;
+  border-style:solid;
+  border-width:5px;
+  text-align: right;}
+
+#android_broadcast {
+position: relative;
+display: block;
+  width: auto;
+  margin: 10px 20px; 
+  padding: 15px 15px;
+  text-align: left;
+border-style:none;
+border-bottom-style:dotted;
+border-width:5px;
+}
+#android_broadcast h3 {
+    font-family: 'UbuntuBold';
+    font-size: 2em; 
+}
+
+#presentation {
+border-style:dotted;
+border-width:1px;
+margin: 10px; 
+padding: 15px;
+}
+ 
+
+
+
 #main {
   width: 1000px;
   margin: auto;
@@ -148,6 +215,12 @@ body {
   #main h1 {
     font-family: 'UbuntuBold';
     font-size: 2em; }
+  #main h2 {
+    font-family: 'UbuntuBold';
+    font-size: 1em; }
+  #main h3 {
+    font-family: 'UbuntuBold';
+    font-size: 1em; }
   #main ul#tabs {
     width: 900px px;
     margin: 20px 0;
@@ -177,17 +250,24 @@ body {
       text-decoration: none; }
       #main #contents a:hover {
         text-decoration: underline; }
+
   #main #contactus {
     float: right;
     width: 300px;
     padding: 5px;
     margin-bottom: 50px;
     text-align: justify; }
+    #main #contactus h1 {
+      font-family: 'UbuntuBold';
+      margin: 10px 0; }
     #main #contactus h2 {
       font-family: 'UbuntuBold';
       margin: 5px 0; }
     #main #contactus h3 {
       margin: 15px 5px 5px 5px; }
+     #main #contactus h4 {
+      font-family: 'UbuntuBold';
+      margin: 5px 0; }
     #main #contactus p {
       margin: 5px 0;
       line-height: 1.5em;
@@ -210,6 +290,54 @@ body {
       margin-top: 20px; }
       #main #contactus .logos a {
         margin: 0 20px; }
+
+
+ #main #android_recent_news {
+    float: right;
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 50px;
+    text-align: justify; }
+    #main #android_recent_news h1 {
+      font-family: 'UbuntuBold';
+      margin: 10px 10px; }
+    #main #android_recent_news h2 {
+      font-family: 'UbuntuBold';
+      margin: 5px 0; }
+    #main #android_recent_news h3 {
+      font-family: 'UbuntuBold';
+      margin: 5px 0; }
+    #main #android_recent_news h4 {
+      font-family: 'UbuntuBold';
+      margin: 15px 5px 5px 5px; 
+      letter-spacing:0.5px}
+
+    #main #android_recent_news p {
+      margin: 5px 0;
+      line-height: 1.5em;
+      font-size: 0.8em; }
+      #main #android_recent_news p a {
+        display: block;
+        margin: 5px 0;
+        text-align: center; }
+    #main #android_recent_news ol {
+      margin-left: 30px;
+      margin-top: 5px;
+      list-style-type: decimal;
+      font-size: 0.8em; }
+      #main #android_recent_news ol li {
+        margin: 3px 0; }
+    #main #android_recent_news form {
+      text-align: center; }
+    #main #android_recent_news .logos {
+      text-align: center;
+      margin-top: 20px; }
+      #main #android_recent_news .logos a {
+        margin: 0 20px; }
+
+ 
+
+
 
 body.home.welcome #contents {
   text-align: justify; }
@@ -238,11 +366,21 @@ body.light {
     background-image: -o-linear-gradient(top, #fafafa, #eaeaea);
     background-image: linear-gradient(top, #fafafa, #eaeaea);
     border: 1px solid #cacaca; }
+  body.light #android_broadcast h1 {
+     color: #399bc9;}
     body.light #tabs li {
       border-right: 1px solid #cacaca; }
   body.light #contactus {
     border: 1px solid #cacaca;
     background-color: #eaeaea; }
+  body.light #android_recent_news {
+    border: 1px solid #cacaca;
+    background-color: #eaeaea; }
+  body.light #tweets_style {
+    border:1px solid #cacaca;
+    background-color:#a6bede;
+  }
+
 
 body.dark {
   background-color: #222222;
@@ -265,8 +403,17 @@ body.dark {
     background-image: -o-linear-gradient(top, #333333, #333333);
     background-image: linear-gradient(top, #333333, #333333);
     border: 1px solid black; }
+    body.dark #android_broadcast h1 {
+     color: #67c8ff;}
     body.dark #tabs li {
       border-right: 1px solid black; }
   body.dark #contactus {
     border: 1px solid black;
     background-color: #333333; }
+body.dark #android_recent_news {
+    border: 1px solid black;
+    background-color: #333333; }
+body.dark #tweets_style {
+    border:1px solid #cacaca;
+    background-color:#4d617c;
+  }

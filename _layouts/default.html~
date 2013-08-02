@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UCLU techSociety | {% if page.title %}{{ page.title }}{% else %}That's techSoc to you{% endif %}</title>
+        <link href="/css/all.css" rel="stylesheet" type="text/css" />
+        <script src="//www.google.com/jsapi?key=AIzaSyA5m1Nc8ws2BbmPRwKu5gFradvD_hgq6G0" type="text/javascript"></script>
+        <script type="text/javascript" src="/js/all.js"></script>
+    </head>
+    <body class="{{ page.page }} {{ page.tab }} light">
+        <div id="header">
+            <div>
+                <form id="theme" method='get' action=''>
+                    <label>Pick theme:</label>
+                    <select>
+                        <option selected="selected">light</option>
+                        <option>dark</option>
+                    </select>
+                    <input type="hidden" name="theme" value="{{ current_theme }}"/>
+                </form>
+                <a href="/"><img src="/images/logo.png" alt="techSoc Logo" title="techSoc Logo" /></a>
+                <ul class="nav_links">
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/aboutus/">ABOUT US</a></li>
+                    <li><a href="/gaming/">GAMING</a></li>
+                    <li><a href="/projects/">PROJECTS</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            {{ content }}
+ 
+            
+        </div>
+    </body>
+</html>

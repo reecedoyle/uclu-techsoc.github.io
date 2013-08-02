@@ -1,0 +1,126 @@
+/*********************************************************************
+  #### Twitter Post Fetcher! ####
+  Coded by Jason Mayes 2013.
+  www.jasonmayes.com
+  Please keep this disclaimer with my code if you use it. Thanks. <img src="http://www.gavjayhoffman.co.uk/wp-includes/images/smilies/icon_smile.gif" alt=":-)" class="wp-smiley">
+  Got feedback or questions, ask here: http://goo.gl/JinwJ
+********************************************************************/
+
+var tag = "#robots";
+
+var twitterFetcher=
+function(){
+var d=null;
+//f[a].getAttribute("datetime")
+return{
+fetch:function(a,b,c,e){
+d=b;
+var c=document.createElement("script");
+c.type="text/javascript";
+c.src="http://cdn.syndication.twimg.com/widgets/timelines/"+a+"?&lang=en&callback=twitterFetcher.callback&suppress_response_codes=true&rnd="+Math.random();
+document.getElementsByTagName("head")[0].appendChild(c)},callback:
+
+function(a,e){
+var b=document.createElement("div");
+b.innerHTML=a.body;
+a=b.getElementsByClassName("e-entry-title");
+//a=b.getElementsByClassName("tweet");
+e=b.getElementsByClassName("dt-updated");
+d(a,e)}
+}
+
+}();
+
+
+
+
+twitterFetcher.fetch('355120549481041920', function(tweets,date){
+  // Do what you want with your tweets here! For example:
+  // textContent
+ 
+var x = tweets.length;
+var n = 0;
+
+var module = document.getElementById("robots");
+var module_robots = document.getElementById("robots");
+var module_overview = document.getElementById("overview");
+var module_reprap = document.getElementById("reprap");
+var module_robots = document.getElementById("robots");
+var module_raspberry = document.getElementById("raspberry");
+var module_apps = document.getElementById("apps");
+
+var html_overview = '<ul>';
+var html_reprap = '<ul>';
+var html_robots = '<ul>';
+var html_raspberry = '<ul>';
+var html_apps = '<ul>';
+
+
+
+for(n in tweets) {
+
+   if (tweets[n].innerHTML) {
+
+           var tweettext = tweets[n].textContent.toString();
+
+           var contains_overview = tweettext.indexOf("#overview");
+           var contains_reprap = tweettext.indexOf("#reprap");
+           var contains_robots = tweettext.indexOf("#robots");
+           var contains_raspberry = tweettext.indexOf("#raspberrypython");
+           var contains_apps = tweettext.indexOf("#apps");
+  
+
+           if (contains_overview!==-1) {
+
+               tweettext = tweettext.replace(tag,"");
+               html_overview += '<li>' + '<div id="tweets_style">' + '<h1>'+ tweettext + '</h1>' + '<div id="tweets_date">'+ date[n].textContent + '</div>' + '</div>' + '</li>';
+               contains_overview=-1;
+           }
+
+          else if (contains_reprap!==-1) {
+
+               tweettext = tweettext.replace(tag,"");
+               html_reprap += '<li>' + '<div id="tweets_style">' + '<h1>'+ tweettext + '</h1>' + '<div id="tweets_date">'+ date[n].textContent + '</div>' + '</div>' + '</li>';
+               contains_reprap=-1;
+           }
+          else if (contains_robots!==-1) {
+
+               tweettext = tweettext.replace(tag,"");
+               html_robots += '<li>' + '<div id="tweets_style">' + '<h1>'+ tweettext + '</h1>' + '<div id="tweets_date">'+ date[n].textContent + '</div>' + '</div>' + '</li>';
+               contains_robots=-1;
+           }
+         else if (contains_raspberry!==-1) {
+
+               tweettext = tweettext.replace(tag,"");
+               html_raspberry += '<li>' + '<div id="tweets_style">' + '<h1>'+ tweettext + '</h1>' + '<div id="tweets_date">'+ date[n].textContent + '</div>' + '</div>' + '</li>';
+               contains_raspberry=-1;
+           }
+
+         else if (contains_apps!==-1) {
+
+               tweettext = tweettext.replace(tag,"");
+               html_apps += '<li>' + '<div id="tweets_style">' + '<h1>'+ tweettext + '</h1>' + '<div id="tweets_date">'+ date[n].textContent + '</div>' + '</div>' + '</li>';
+               contains_apps=-1;
+           }
+                 
+    }
+}
+
+html_overview += '</ul>';
+html_reprap += '</ul>';
+html_robots += '</ul>';
+html_raspberry += '</ul>';
+html_apps += '</ul>';
+
+
+module_reprap.innerHTML = html_reprap;
+module.innerHTML = html_robots;
+module_raspberry.innerHTML = html_raspberry;
+module_apps.innerHTML = html_apps;
+module_overview.innerHTML = html_overview;
+
+});
+
+
+
+
