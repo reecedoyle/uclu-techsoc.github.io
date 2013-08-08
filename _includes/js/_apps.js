@@ -34,8 +34,9 @@ function feedLoaded(result) {
         
       var text = entry.content; // text of the post
       var date = entry.publishedDate; 
+      var link = entry.link;
 
-      html+=author_filter(author,message,text,date);
+      html+=author_filter(author,message,text,date,link);
        
       
      }
@@ -66,7 +67,7 @@ google.setOnLoadCallback(OnLoad);
 
 // filter posts, so only admin of the group is showed off
 // as well as deletes his/her name from the post (default rss)
-function author_filter(author, message, text, date) {
+function author_filter(author, message, text, date,link) {
       var html="";
       var contains_author = message.indexOf(author);
       if (contains_author!==-1) {
@@ -74,7 +75,7 @@ function author_filter(author, message, text, date) {
        message = message.replace(author+" posted a link to techSoc Mobile App Dev's wall:","");
 
 
-html = '<li>' + '<div id="tweets_style">' + '<h4>'+ message + '</h4>' + '<div id="tweets_date">' + '<h3>'+ date + '</h3>'+ '</div>' + '</div>' + '</li>';
+html = '<li>' + '<div class="plugin_message">' + '<h4>'+ message + '</h4>' + '<div class="plugin_message_details">' + '<h3>'+ date + '</h3>'+ '</div>' +'<div class="plugin_message_details">' + '<a href=' + link + '><img alt="Visit our Facebook Group" title="from our Facebook Group" src="/images/facebook.png" /></a>' + '</div>' + '</div>' + '</li>';
      }
 return html;
 }

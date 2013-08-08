@@ -11,7 +11,7 @@ page: gaming
     <li><a href="/gaming/competitions">Competitions</a></li>
     <li><a href="/gaming/leaderboard">Leaderboard</a></li>
 </ul>
-            
+            {{ content }}
             <div id="contactus">
                 <h2>Contact Us</h2>
                 <ol>
@@ -36,7 +36,5 @@ page: gaming
                 </p>
             </div>
         </div>
-
-{{ content }}
 
 

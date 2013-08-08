@@ -15,7 +15,7 @@ title: Projects | Apps development | First Android App
 </div>
 
 
-<div id="android_broadcast">
+<div id="news_broadcast">
 
 
  <h1> 1) Make your first Android App!</h1>
@@ -27,7 +27,7 @@ title: Projects | Apps development | First Android App
 </div>
 
 
-<div id="android_broadcast">
+<div id="news_broadcast">
 
 <h1> 2) Download Android software if you decided to use Eclipse! </h1>
 <br> 
@@ -37,7 +37,7 @@ title: Projects | Apps development | First Android App
 </div>
 
 
-<div id="android_broadcast">
+<div id="news_broadcast">
 
 <h1> 3) Use SDK Manager if you want to download some additional software! </h1>
 <br> 
@@ -48,19 +48,24 @@ title: Projects | Apps development | First Android App
 
 
 
-<div id="android_broadcast">
+<div id="news_broadcast">
 
 
 <h1> 4) First "Hello world" Android App! </h1>
 <br> 
 
+<div style="margin-bottom:5px"> <strong> For Eclipse </strong> </div> 
    <iframe src="http://www.slideshare.net/slideshow/embed_code/24849179" width="576" height="482" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe> 
+
+
+<div style="margin-bottom:5px"> <strong> For Android Studio </strong> </div>
+   <iframe src="http://www.slideshare.net/slideshow/embed_code/24876086" width="576" height="482" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe> 
 
 </div>
 
 
 
-<div id="android_broadcast">
+<div id="news_broadcast">
 
 <h1> 5) Run it on your device or emulator! </h1>
 <br> 
@@ -71,4 +76,4 @@ title: Projects | Apps development | First Android App
 </div>
 
 
-<!--427 356   576" height="482"-->
+

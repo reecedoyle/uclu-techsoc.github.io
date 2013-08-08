@@ -1,4 +1,3 @@
-// controls permanent theme change
 
 $(document).ready(function() {
     var theme = $("#theme");

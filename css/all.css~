@@ -141,26 +141,27 @@ body {
         color: inherit;
         padding-bottom: 5px; }
 
-#tweets_style { 
+/* currently css for facebook updates (could include other soon) */
+.plugin_message { 
   position: relative;
   width: auto;
   margin: 10px; 
   padding: 15px;
   text-align: left; }
-#tweets_style h1 {
+.plugin_message h1 {
     font-family: 'UbuntuBold';
     font-size: 2em; }
-#tweets_style h2 {
+.plugin_message h2 {
   font-family: 'UbuntuBold';
     font-size: 1.5em; }
-  #tweets_style h3 {
+.plugin_message h3 {
   font-family: 'UbuntuBold';
     font-size: 1em; }
-#tweets_style h4 {
+.plugin_message h4 {
   font-family: 'UbuntuBold';
     font-size: 1em; }
 
-#tweets_date {
+.plugin_message_details {
   position: right;
   width: auto;
   margin: 1px 1px; 
@@ -168,23 +169,11 @@ body {
   text-align: right;}
 
 
-#logo_img_left { 
-  position: left;
-  width: 130px;
-  border-style:solid;
-  border-width:5px;
-  text-align: left; }
 
-#logo_img_right {
-  position: right;
-  width: 130px;
-  border-style:solid;
-  border-width:5px;
-  text-align: right;}
-
-#android_broadcast {
+.news_broadcast {
 position: relative;
-  
+display: block;
+  width: auto;
   margin: 10px 20px; 
   padding: 15px 15px;
   text-align: left;
@@ -192,7 +181,7 @@ border-style:none;
 border-bottom-style:dotted;
 border-width:5px;
 }
-#android_broadcast h3 {
+.news_broadcast h3 {
     font-family: 'UbuntuBold';
     font-size: 2em; 
 }
@@ -291,47 +280,47 @@ padding: 15px;
         margin: 0 20px; }
 
 
- #main #android_recent_news {
+ .right_news_column {
     float: right;
     width: 300px;
     padding: 5px;
     margin-bottom: 50px;
     text-align: justify; }
-    #main #android_recent_news h1 {
+    .right_news_column h1 {
       font-family: 'UbuntuBold';
       margin: 10px 10px; }
-    #main #android_recent_news h2 {
+    .right_news_column h2 {
       font-family: 'UbuntuBold';
       margin: 5px 0; }
-    #main #android_recent_news h3 {
+    .right_news_column h3 {
       font-family: 'UbuntuBold';
       margin: 5px 0; }
-    #main #android_recent_news h4 {
+    .right_news_column h4 {
       font-family: 'UbuntuBold';
       margin: 15px 5px 5px 5px; 
       letter-spacing:0.5px}
 
-    #main #android_recent_news p {
+    .right_news_column p {
       margin: 5px 0;
       line-height: 1.5em;
       font-size: 0.8em; }
-      #main #android_recent_news p a {
+      .right_news_column p a {
         display: block;
         margin: 5px 0;
         text-align: center; }
-    #main #android_recent_news ol {
+    .right_news_column ol {
       margin-left: 30px;
       margin-top: 5px;
       list-style-type: decimal;
       font-size: 0.8em; }
-      #main #android_recent_news ol li {
+      .right_news_column ol li {
         margin: 3px 0; }
-    #main #android_recent_news form {
+   .right_news_column form {
       text-align: center; }
-    #main #android_recent_news .logos {
+    .right_news_column .logos {
       text-align: center;
       margin-top: 20px; }
-      #main #android_recent_news .logos a {
+      .right_news_column .logos a {
         margin: 0 20px; }
 
  
@@ -365,17 +354,20 @@ body.light {
     background-image: -o-linear-gradient(top, #fafafa, #eaeaea);
     background-image: linear-gradient(top, #fafafa, #eaeaea);
     border: 1px solid #cacaca; }
-  body.light #android_broadcast h1 {
+  body.light #news_broadcast h1 {
      color: #399bc9;}
     body.light #tabs li {
       border-right: 1px solid #cacaca; }
   body.light #contactus {
     border: 1px solid #cacaca;
     background-color: #eaeaea; }
-  body.light #android_recent_news {
+  body.light .right_news_column {
     border: 1px solid #cacaca;
     background-color: #eaeaea; }
-  body.light #tweets_style {
+
+  
+
+  body.light .tweets_style {
     border:1px solid #cacaca;
     background-color:#a6bede;
   }
@@ -402,17 +394,20 @@ body.dark {
     background-image: -o-linear-gradient(top, #333333, #333333);
     background-image: linear-gradient(top, #333333, #333333);
     border: 1px solid black; }
-    body.dark #android_broadcast h1 {
+    body.dark #news_broadcast h1 {
      color: #67c8ff;}
     body.dark #tabs li {
       border-right: 1px solid black; }
   body.dark #contactus {
     border: 1px solid black;
     background-color: #333333; }
-body.dark #android_recent_news {
+
+
+body.dark .right_news_column {
     border: 1px solid black;
     background-color: #333333; }
-body.dark #tweets_style {
+
+body.dark .tweets_style {
     border:1px solid #cacaca;
     background-color:#4d617c;
   }
