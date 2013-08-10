@@ -2,7 +2,6 @@
     var DEFAULT_THEME = "light";
 
     _setTheme = function(all_themes, theme_name) {
-
         $("body").removeClass(all_themes).addClass(theme_name);
     };
 
@@ -11,13 +10,11 @@
 	if (!theme_name) {
 		return DEFAULT_THEME;
 	}
-
         return theme_name;
     };
 
     _setLocalStorageTheme = function(theme_name) {
         localStorage.setItem("theme", theme_name);
-        document.cookie = "theme=" + theme_name + "; path=/";
     };
 
     $(document).ready(function() {
@@ -33,6 +30,7 @@
             var theme_name = theme.find("option:selected").val();
             $("body").removeClass(all_themes).addClass(theme_name);
 
+	    _setTheme(all_themes, theme_name);
             _setLocalStorageTheme(theme_name);
         });
     });
