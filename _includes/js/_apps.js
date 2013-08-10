@@ -11,17 +11,18 @@ function feedLoaded(result) {
   if (!result.error) {
     // Grab the container we will put the results into
     var container = document.getElementById("android_recent_news");
+    if (!container) {
+	    return;
+    }
 
 
     // Loop through the feeds, putting the titles onto the page.
     // Check out the result object for a list of properties returned in each entry.
     // http://code.google.com/apis/ajaxfeeds/documentation/reference.html#JSON
- var author = "Michael Leong";
- var html = '<ul>';
-
+    var author = "Michael Leong";
+    var html = '<ul>';
 
     for (var i = 0; i < result.feed.entries.length; i++) {
-
       var entry = result.feed.entries[i];
 
      // checking for no adverts  
@@ -43,9 +44,8 @@ function feedLoaded(result) {
 
    }
 
+
       html += '</ul>';
-      
-      container.innerHTML += html;
   }
 }
 

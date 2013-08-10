@@ -1,55 +1,40 @@
-// controls permanent theme change
+(function() {
+    var DEFAULT_THEME = "light";
 
-$(document).ready(function() {
-    var theme = $("#theme");
-    var all_themes = $.map($("#theme option"), function(element, index) {
+    _setTheme = function(all_themes, theme_name) {
 
-        var theme_name = changeOptionSelection();
+        $("body").removeClass(all_themes).addClass(theme_name);
+    };
 
-        return $("body").removeClass(all_themes).addClass(localStorage.getItem("theme"));
+    _getLocalStorageTheme = function() {
+        var theme_name = localStorage.getItem("theme");
+	if (!theme_name) {
+		return DEFAULT_THEME;
+	}
 
-}).join(" ");
+        return theme_name;
+    };
 
-
-    // on theme change event 
-    theme.find("select").change(function() {
-        $("body").removeClass("light");
-        $("body").removeClass("dark");
-
-        var theme_name = theme.find("option:selected").val();
+    _setLocalStorageTheme = function(theme_name) {
         localStorage.setItem("theme", theme_name);
-       
-        $("body").addClass(theme_name);
-          
+        document.cookie = "theme=" + theme_name + "; path=/";
+    };
+
+    $(document).ready(function() {
+        var theme = $("#theme");
+
+        var all_themes = $.map($("#theme option"), function(element, index) {
+            return $(element).val();
+        }).join(" ");
+
+        _setTheme(all_themes, _getLocalStorageTheme());
+
+        theme.find("select").change(function() {
+            var theme_name = theme.find("option:selected").val();
+            $("body").removeClass(all_themes).addClass(theme_name);
+
+            _setLocalStorageTheme(theme_name);
+        });
     });
 
-
-});
-
-
-
-// function changing option selection in html
-function changeOptionSelection() {
-var theme_name;
-var container = document.getElementById("theme");
-        container.innerHTML="";
-        var html="";
-        
-
-        if (localStorage.getItem("theme")==="light") {
-        html='<label>Pick theme:</label> <select> <option selected="selected">light</option> <option>dark</option> </select> <input type="hidden" name="theme" value="light"/>'
-        theme_name="light";
-        }
-
-        else {
-        html='<label>Pick theme:</label> <select> <option>light</option> <option selected="selected">dark</option> </select> <input type="hidden" name="theme" value="dark"/>'
-        theme_name="dark";
-        }
-        container.innerHTML = html; 
-
-return theme_name;
-
-}
-
-
-
+})();
