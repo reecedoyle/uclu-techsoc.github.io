@@ -2,6 +2,15 @@
     var DEFAULT_THEME = "light";
 
     _setTheme = function(all_themes, theme_name) {
+        var selector = $("#theme option"),
+	    i, il;
+	
+        for (i = 0, il = selector.length; i < il; i++) {
+	    if (selector[i].innerHTML === theme_name) {
+		selector[i].selected = true;
+	    }
+	}
+	
         $("body").removeClass(all_themes).addClass(theme_name);
     };
 
