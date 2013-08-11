@@ -1,0 +1,171 @@
+body {
+    font-family: 'UbuntuRegular';
+}
+
+#theme {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.8em;
+}
+
+#custom_theme {
+    font-size: 0.8em;
+    width: 800px;
+    margin: auto;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    display: none;
+
+    label {
+        display: inline-block;
+        text-align: right;
+        width: 150px;
+    }
+
+    input {
+    }
+}
+
+#header {
+
+    div {
+        position: relative;
+        width: $width;
+        margin: auto;
+
+        img {
+            margin: 5px;
+        }
+
+        ul {
+            position: absolute;
+            bottom: 10px;
+            right: 0px;
+
+            font-family: 'UbuntuBold';
+
+            li {
+                display:inline;
+                margin: 0 10px;
+                
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+
+#main {
+    width: $width;
+    margin: auto;
+    padding: 20px 0;
+
+    h1 {
+        font-family: 'UbuntuBold';
+        font-size: 2em;
+    }
+
+    ul#tabs {
+        width: ($width - 100)px;
+        margin: 20px 0;
+        height: 40px;
+
+        li {
+            display: inline-block;
+            height: 40px;
+            width: 150px;
+            text-align: center;
+            margin-right: -4px;
+
+            a {
+                display: block;
+                height: 27px;
+                text-decoration: none;
+                color: inherit;
+                padding-top: 12px;
+            }
+        }
+    }
+
+    #contents {
+        float: left;
+        width: $contents_width;
+        text-align: justify;
+
+        h2.tabheading {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    #contactus {
+        float: right;
+        width: $contactus_width;
+        padding: 5px;
+        margin-bottom: 50px;
+        text-align: justify;
+
+        h2 {
+            font-family: 'UbuntuBold';
+            margin: 5px 0;
+        }
+
+        h3 {
+            margin: 15px 5px 5px 5px;
+        }
+
+        p {
+            margin: 5px 0;
+            line-height: 1.5em;
+            font-size: 0.8em;
+
+            a {
+                display: block;
+                margin: 5px 0;
+                text-align: center;
+            }
+        }
+
+        ol {
+            margin-left: 30px;
+            margin-top: 5px;
+            list-style-type: decimal;
+            font-size: 0.8em;
+
+            li {
+                margin: 3px 0;
+            }
+        }
+
+        form {
+            text-align: center;
+        }
+
+        .logos {
+            text-align: center;
+            margin-top: 20px;
+
+            a {
+                margin: 0 20px;
+            }
+        }
+    }
+}

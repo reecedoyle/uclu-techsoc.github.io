@@ -1,0 +1,44 @@
+@mixin theme($name, $page_background, $font_colour, $gradient_light, $gradient_dark, $border_color, $highlight) {
+    body.#{$name} {
+        background-color: $page_background;
+        color: $font_colour;
+
+        .nav_links {
+            a:hover {
+                border-bottom: 2px solid $highlight;
+            }
+        }
+
+        h2, h3, a {
+            color: $highlight;
+        }
+
+        #header {
+            background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, $gradient_light), color-stop(100%, $gradient_dark));
+            background-image: -webkit-linear-gradient(top, $gradient_light, $gradient_dark);
+            background-image: -moz-linear-gradient(top, $gradient_light, $gradient_dark);
+            background-image: -o-linear-gradient(top, $gradient_light, $gradient_dark);
+            background-image: linear-gradient(top, $gradient_light, $gradient_dark);
+            border-bottom: 1px solid $border_color;
+        }
+
+        #tabs {
+            background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, $gradient_light), color-stop(100%, $gradient_dark));
+            background-image: -webkit-linear-gradient(top, $gradient_light, $gradient_dark);
+            background-image: -moz-linear-gradient(top, $gradient_light, $gradient_dark);
+            background-image: -o-linear-gradient(top, $gradient_light, $gradient_dark);
+            background-image: linear-gradient(top, $gradient_light, $gradient_dark);
+            border: 1px solid $border_color;
+
+            li {
+                border-right: 1px solid $border_color;
+            }
+        }
+        #contactus {
+            border: 1px solid $border_color;
+            background-color: $gradient_dark;
+        }
+    }
+}
+@include theme('light', #FFFFFF, #000000, #FAFAFA, #EAEAEA, #CACACA, #399BC9);
+@include theme('dark', #222222, #EEEEEE, #333333, #333333, #000000, #67C8FF);
