@@ -4,12 +4,13 @@ page: projects
 ---
 <h1>Projects</h1>
 
+
 <ul id="tabs" class="nav_links">
-    <li><a href="/projects/">Overview</a></li>
-    <li><a href="/projects/reprap">RepRap</a></li>
-    <li><a href="/projects/robots">Robots</a></li>
-    <li><a href="/projects/raspberrypython">Raspberry Python</a></li>
-    <li><a href="/projects/apps">Apps</a></li>
+    <li class="passive" id="project_overview" ><a href="/projects/">Overview</a></li>
+    <li class="passive" id="project_reprap" ><a href="/projects/reprap">RepRap</a></li>
+    <li class="passive" id="project_robots" ><a href="/projects/robots">Robots</a></li>
+    <li class="passive" id="project_rasppython" ><a href="/projects/raspberrypython">Raspberry Python</a></li>
+    <li class="passive" id="project_apps" ><a href="/projects/apps">Apps</a></li>
         
 </ul>
 
@@ -19,11 +20,6 @@ page: projects
 
 </div>
 
-<div id="overview_menu">
-<a href="{% include facebook.href %}"><img alt="Visit our Facebook Group" title="Visit our Facebook Group" src="/images/facebook.png" /></a>
-                    <a href="http://twitter.com/uclutechsoc"><img alt="Follow our Twitter" title="Follow our Twitter" src="/images/twitter.png" /></a>
-                    <a href="mailto:president@uclutech.com"><img alt="Email our president" title="Email our president" src="/images/email.png" /></a>
-</div>
 
 
 

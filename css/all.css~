@@ -223,7 +223,7 @@ padding: 15px;
         display: block;
         height: 27px;
         text-decoration: none;
-        color: inherit;
+        /*color: inherit;*/
         padding-top: 12px; }
   #main #contents {
     float: left;
@@ -347,17 +347,34 @@ body.light {
     background-image: -o-linear-gradient(top, #fafafa, #eaeaea);
     background-image: linear-gradient(top, #fafafa, #eaeaea);
     border-bottom: 1px solid #cacaca; }
-  body.light #tabs {
+
+
+  body.light #passive {
     background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #fafafa), color-stop(100%, #eaeaea));
     background-image: -webkit-linear-gradient(top, #fafafa, #eaeaea);
     background-image: -moz-linear-gradient(top, #fafafa, #eaeaea);
     background-image: -o-linear-gradient(top, #fafafa, #eaeaea);
     background-image: linear-gradient(top, #fafafa, #eaeaea);
     border: 1px solid #cacaca; }
+
+  body.light #active {
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #333333), color-stop(100%, #333333));
+    background-image: -webkit-linear-gradient(top, #333333, #333333);
+    background-image: -moz-linear-gradient(top, #333333, #333333);
+    background-image: -o-linear-gradient(top, #333333, #333333);
+    background-image: linear-gradient(top, #333333, #333333);
+    border: 1px solid black; }
+  body.light #passive a { color: black; }    
+  body.light #active a { color: white; }    
+
+  body.light #passive li {
+      border-right: 1px solid #cacaca; }
+  body.light #active li {
+      border-right: 1px solid black; }
+
+
   body.light #news_broadcast h1 {
      color: #399bc9;}
-    body.light #tabs li {
-      border-right: 1px solid #cacaca; }
   body.light #contactus {
     border: 1px solid #cacaca;
     background-color: #eaeaea; }
@@ -367,7 +384,7 @@ body.light {
 
   
 
-  body.light .tweets_style {
+  body.light .plugin_message {
     border:1px solid #cacaca;
     background-color:#a6bede;
   }
@@ -387,17 +404,35 @@ body.dark {
     background-image: -o-linear-gradient(top, #333333, #333333);
     background-image: linear-gradient(top, #333333, #333333);
     border-bottom: 1px solid black; }
-  body.dark #tabs {
+
+  
+
+body.dark #active {
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #fafafa), color-stop(100%, #eaeaea));
+    background-image: -webkit-linear-gradient(top, #fafafa, #eaeaea);
+    background-image: -moz-linear-gradient(top, #fafafa, #eaeaea);
+    background-image: -o-linear-gradient(top, #fafafa, #eaeaea);
+    background-image: linear-gradient(top, #fafafa, #eaeaea);
+    border: 1px solid #cacaca; }
+
+  body.dark #passive {
     background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #333333), color-stop(100%, #333333));
     background-image: -webkit-linear-gradient(top, #333333, #333333);
     background-image: -moz-linear-gradient(top, #333333, #333333);
     background-image: -o-linear-gradient(top, #333333, #333333);
     background-image: linear-gradient(top, #333333, #333333);
     border: 1px solid black; }
+  body.dark #active a { color: black; }    
+  body.dark #passive a { color: white; }   
+
     body.dark #news_broadcast h1 {
      color: #67c8ff;}
-    body.dark #tabs li {
+
+   body.dark #active li {
+      border-right: 1px solid #cacaca; }
+  body.dark #passive li {
       border-right: 1px solid black; }
+
   body.dark #contactus {
     border: 1px solid black;
     background-color: #333333; }
@@ -407,7 +442,7 @@ body.dark .right_news_column {
     border: 1px solid black;
     background-color: #333333; }
 
-body.dark .tweets_style {
+body.dark .plugin_message {
     border:1px solid #cacaca;
     background-color:#4d617c;
   }

@@ -3,11 +3,13 @@ layout: projects
 tab: Apps
 title: Projects | Apps development 
 ---
+<div id="apps">
 
 <div id="main">
 
+   <div class="right_news_column">
 
-   <div id="android_recent_news">
+     <div id="android_recent_news">
       
          <div class="news_broadcast">
 
@@ -37,7 +39,7 @@ title: Projects | Apps development
    </div>
 </div>
 
-
+</div>
 
 
 
@@ -69,6 +71,9 @@ title: Projects | Apps development
          
 </div>
 
+
+
+</div>
 
 
 

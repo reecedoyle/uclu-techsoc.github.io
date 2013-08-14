@@ -16,18 +16,18 @@
                 <form id="theme" method='get' action=''>
                     <label>Pick theme:</label>
                     <select>
-                        <option selected="selected">light</option>
-                        <option>dark</option>
+                        <option onclick="switch_style('light');return false;" selected="selected">light</option>
+                        <option onclick="switch_style('dark');return false;">dark</option>
                     </select>
                     <input type="hidden" name="theme" value="{{ current_theme }}"/>
                 </form>
 
                 <a href="/"><img src="/images/logo.png" alt="techSoc Logo" title="techSoc Logo" /></a>
                 <ul class="nav_links">
-                    <li><a href="/">HOME</a></li>
-                    <li><a href="/aboutus/">ABOUT US</a></li>
-                    <li><a href="/gaming/">GAMING</a></li>
-                    <li><a href="/projects/">PROJECTS</a></li>
+                    <li id="main_home" class="passive"><a href="/">HOME</a></li>
+                    <li id="main_aboutus" class="passive"><a href="/aboutus/">ABOUT US</a></li>
+                    <li id="main_gaming" class="passive"><a href="/gaming/">GAMING</a></li>
+                    <li id="main_projects" class="passive"><a href="/projects/">PROJECTS</a></li>
                 </ul>
             </div>
         </div>

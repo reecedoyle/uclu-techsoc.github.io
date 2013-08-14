@@ -5,4 +5,5 @@
 {% include js/_apps.js %}
 {% include js/_jquery.js %}
 {% include js/_jsapi.js %}
+{% include js/_tabsControl.js %}
 
