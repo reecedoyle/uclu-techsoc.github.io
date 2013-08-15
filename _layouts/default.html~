@@ -24,10 +24,11 @@
 
                 <a href="/"><img src="/images/logo.png" alt="techSoc Logo" title="techSoc Logo" /></a>
                 <ul class="nav_links">
-                    <li id="main_home" class="passive"><a href="/">HOME</a></li>
-                    <li id="main_aboutus" class="passive"><a href="/aboutus/">ABOUT US</a></li>
-                    <li id="main_gaming" class="passive"><a href="/gaming/">GAMING</a></li>
-                    <li id="main_projects" class="passive"><a href="/projects/">PROJECTS</a></li>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/aboutus/">ABOUT US</a></li>
+                    <li><a href="/gaming/">GAMING</a></li>
+                    <li><a href="/projects/">PROJECTS</a></li>
+                    <li><a href="/sponsors/">SPONSORS</a></li>
                 </ul>
             </div>
         </div>

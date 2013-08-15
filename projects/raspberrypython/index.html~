@@ -5,6 +5,8 @@ title: Projects | Raspberry Python
 ---
 <div id="main">
 
+   <div class="right_news_column">
+
 <!-- class need to be changed here -->
    <div id="android_recent_news">
       
@@ -33,6 +35,8 @@ title: Projects | Raspberry Python
        <h1> Recent news </h1>
 
    </div>
+
+</div>
 
 </div>
 

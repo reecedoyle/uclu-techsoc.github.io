@@ -3,7 +3,7 @@ layout: projects
 tab: Apps
 title: Projects | Apps development 
 ---
-<div id="apps">
+
 
 <div id="main">
 
@@ -13,13 +13,13 @@ title: Projects | Apps development
       
          <div class="news_broadcast">
 
-           <h1>Join us!</h1></br>
+           <h1>Join us!</h1>
           <div class="logos">
-           <a href="{% include facebook.href %}"><img alt="Visit our Facebook Group" title="Visit our Facebook Group" src="/images/facebook.png" /></a>
+           <a href="{% include facebook.href %}"><img alt="Visit our Facebook Group" title="Visit our Facebook Group" src="/images/facebook.png" width="40" height="40" /></a>
 
-           <a href="http://twitter.com/uclutechsoc"><img alt="Follow our Twitter" title="Follow our Twitter" src="/images/twitter.png" /></a>
+           <a href="http://twitter.com/uclutechsoc"><img alt="Follow our Twitter" title="Follow our Twitter" src="/images/twitter.png" width="40" height="40" /></a>
 
-           <a href="mailto:president@uclutech.com"><img alt="Email our president" title="Email our president" src="/images/email.png" /></a>
+           <a href="mailto:president@uclutech.com"><img alt="Email our president" title="Email our president" src="/images/email.png" width="40" height="40" /></a>
            
           </div>
 
@@ -72,8 +72,6 @@ title: Projects | Apps development
 </div>
 
 
-
-</div>
 
 
 

@@ -46,6 +46,7 @@ function feedLoaded(result) {
 
 
       html += '</ul>';
+      container.innerHTML += html;
   }
 }
 

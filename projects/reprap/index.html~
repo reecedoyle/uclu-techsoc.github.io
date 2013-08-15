@@ -5,6 +5,8 @@ title: Projects | RepRap
 ---
 <div id="main">
 
+ <div class="right_news_column">
+
 <!-- class need to be changed here -->
    <div id="android_recent_news">
       
@@ -34,5 +36,6 @@ title: Projects | RepRap
 
    </div>
 
+</div>
 </div>
 

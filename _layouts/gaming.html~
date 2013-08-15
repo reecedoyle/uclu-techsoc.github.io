@@ -3,13 +3,13 @@ layout: default
 page: gaming
 ---
 
+ <h1>Gaming</h1>
 
-  <div id="main">
-            <h1>Gaming</h1>
+  <div id="main">           
 <ul id="tabs" class="nav_links">
-    <li><a href="/gaming/">Overview</a></li>
-    <li><a href="/gaming/competitions">Competitions</a></li>
-    <li><a href="/gaming/leaderboard">Leaderboard</a></li>
+    <li class="passive" id="gaming_overview"><a href="/gaming/">Overview</a></li>
+    <li class="passive" id="gaming_competitions"><a href="/gaming/competitions">Competitions</a></li>
+    <li class="passive" id="gaming_leaderboard" ><a href="/gaming/leaderboard">Leaderboard</a></li>
 </ul>
             
             <div id="contactus">

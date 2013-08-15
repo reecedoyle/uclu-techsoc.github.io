@@ -14,10 +14,10 @@ var projects_tabs_url = ["/projects/","/projects/reprap/","/projects/robots/","/
 var aboutus_ids = ["#aboutus_overview","#aboutus_what","#aboutus_committee"];
 var aboutus_tabs_url = ["/aboutus/","/aboutus/what/","/aboutus/committee/"];
 
-//var menu_ids = ["#menu_overview"];
-//var menu_tabs_url = ["/"];
+var sponsors_ids = ["#sponsors_overview","#sponsors_events"];
+var sponsors_tabs_url = ["/sponsors/","/sponsors/events/"];
 
-   
+
     
      var menu_projects = url.indexOf("projects");
      if (menu_projects!==-1) parseTab(url,projects_tabs_url,projects_ids);
@@ -27,7 +27,12 @@ var aboutus_tabs_url = ["/aboutus/","/aboutus/what/","/aboutus/committee/"];
       else {
         var menu_aboutus = url.indexOf("aboutus");
         if (menu_aboutus!==-1) parseTab(url,aboutus_tabs_url,aboutus_ids);
-        //else parseTab(url,menu_tabs_url,menu_ids);   
+        else {
+            var menu_sponsors = url.indexOf("sponsors");
+            if (menu_sponsors!==-1) parseTab(url,sponsors_tabs_url,sponsors_ids);
+
+        }
+         
       }
 
      }

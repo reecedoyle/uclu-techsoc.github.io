@@ -1,8 +1,9 @@
 ---
-layout: projects
-tab: overview
-title: Projects | Overview
+layout: sponsors
+tab: events
+title: Sponsors | Events
 ---
+
 <!-- right column info menu -->
 <div id="main">
  
@@ -28,39 +29,7 @@ title: Projects | Overview
                 </p>
     </div>
 
-     <div class="news_broadcast">         
-     
-      <a href="/projects/apps">
-       <div class="plugin_message">
-        <img src="/images/projects/android.png">
-        <h1>Apps</h1>
-       </div>
-      </a>
-
-      <a href="/projects/robots">
-       <div class="plugin_message">
-         <img src="/images/projects/robots.png" height="230px" width="230px">
-         <h1>Robots</h1>
-        </div>
-       </a>
-          
-       <a href="/projects/raspberrypython">
-         <div class="plugin_message">
-          <img src="/images/projects/python.png">
-          <h1>Raspberry Python</h1>
-         </div>
-       </a>
-
-        <a href="/projects/reprap">
-         <div class="plugin_message" >
-         <img src="/images/projects/reprap.png" >
-         <h1>RepRap</h1>
-         </div>
-        </a>
-     </div>
-
-  </div> 
-
+    
 </div>
 
 
@@ -70,14 +39,6 @@ title: Projects | Overview
 
 <div class="news_broadcast">
 
-      <h2>Click to</h2>
- 
-        <a href="/projects/apps/first_android_app.html">
-             <div>               
-               <h1> Learn basic commands to use Git! </h1></br>
-               <img src="/images/projects/github/github.png"/>
-             </div>
-        </a>  
                          
 </div>
 
