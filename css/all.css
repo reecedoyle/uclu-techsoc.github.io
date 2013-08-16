@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, footer {
   margin: 0;
   padding: 0;
   border: 0;
@@ -11,7 +11,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, footer {
   display: block; }
 
 body {
@@ -141,6 +141,9 @@ body {
         color: inherit;
         padding-bottom: 5px; }
 
+
+	
+
 /* currently css for facebook updates (could include other soon) */
 .plugin_message { 
   position: relative;
@@ -171,20 +174,24 @@ body {
 
 
 .news_broadcast {
-position: relative;
-display: block;
+  position: relative;
+  display: block;
   width: auto;
   margin: 10px 20px; 
   padding: 15px 15px;
   text-align: left;
-border-style:none;
-border-bottom-style:dotted;
-border-width:5px;
+  border-style: none;
+  border-bottom-style: dotted;
+  border-width: 5px;
 }
+
 .news_broadcast h3 {
-    font-family: 'UbuntuBold';
-    font-size: 2em; 
+  display: inline;
+  font-family: 'UbuntuBold';
+  font-size: 2em; 
 }
+
+
 
 #presentation {
 border-style:dotted;
@@ -348,6 +355,14 @@ body.light {
     background-image: linear-gradient(top, #fafafa, #eaeaea);
     border-bottom: 1px solid #cacaca; }
 
+body.light #footer {
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #fafafa), color-stop(100%, #eaeaea));
+    background-image: -webkit-linear-gradient(bottom, #fafafa, #eaeaea);
+    background-image: -moz-linear-gradient(bottom, #fafafa, #eaeaea);
+    background-image: -o-linear-gradient(bottom, #fafafa, #eaeaea);
+    background-image: linear-gradient(bottom, #fafafa, #eaeaea);
+    border-top: 1px solid #cacaca; }
+
 
   body.light .passive {
     background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #fafafa), color-stop(100%, #eaeaea));
@@ -373,7 +388,7 @@ body.light {
       border-right: 1px solid black; }
 
 
-  body.light #news_broadcast h1 {
+  body.light .news_broadcast h1 {
      color: #399bc9;}
   body.light #contactus {
     border: 1px solid #cacaca;
@@ -397,14 +412,20 @@ body.dark {
     border-bottom: 2px solid #67c8ff; }
   body.dark h2, body.dark h3, body.dark a {
     color: #67c8ff; }
-  body.dark #header {
+
+  body.dark #header, body.dark #footer {
     background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #333333), color-stop(100%, #333333));
     background-image: -webkit-linear-gradient(top, #333333, #333333);
     background-image: -moz-linear-gradient(top, #333333, #333333);
     background-image: -o-linear-gradient(top, #333333, #333333);
     background-image: linear-gradient(top, #333333, #333333);
-    border-bottom: 1px solid black; }
-
+   }
+body.dark #header {
+ border-bottom: 1px solid black; 
+}
+body.dark #footer {
+ border-top: 1px solid black; 
+}
   
 
 body.dark .active {
@@ -425,7 +446,7 @@ body.dark .active {
   body.dark .active a { color: black; }    
   body.dark .passive a { color: white; }   
 
-    body.dark #news_broadcast h1 {
+    body.dark .news_broadcast h1 {
      color: #67c8ff;}
 
    body.dark .active li {

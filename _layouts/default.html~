@@ -33,10 +33,16 @@
             </div>
         </div>
 
-        <div id="main">
-            {{ content }}   
+        
 
+        <div id="main">
+           {{ content }}   
         </div>
 
+        <div id="footer">
+          
+          <h3>Made by: William Mayor, Michael Leong, Vlad Kolesnyk. Join development team on github.</h3>
+        
+        </div>
     </body>
 </html>

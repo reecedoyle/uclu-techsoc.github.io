@@ -5,8 +5,8 @@ page: aboutus
 <h1>About Us</h1>
 <ul id="tabs" class="nav_links">
     <li class="passive" id="aboutus_overview"><a href="/aboutus/">Who We Are</a></li>
-    <li class="passive" id="gaming_what"><a href="/aboutus/what">What We Do</a></li>
-    <li class="passive" id="gaming_committee"><a href="/aboutus/committee">Our Committee</a></li>
+    <li class="passive" id="aboutus_what"><a href="/aboutus/what">What We Do</a></li>
+    <li class="passive" id="aboutus_committee"><a href="/aboutus/committee">Our Committee</a></li>
 </ul>
 <div id="contents">
     {{ content }}
