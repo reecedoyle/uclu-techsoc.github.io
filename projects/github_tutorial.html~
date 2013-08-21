@@ -5,8 +5,9 @@ title: Projects | Projects Overview | Using Git
 ---
 
 <div id="main">
-  
-   <div class="right_news_column">
+<div id="pageNav">  
+   <div class="right_news_column" >
+
 <div class="news_broadcast">
 
       <h1>Join us!</h1>
@@ -28,7 +29,7 @@ title: Projects | Projects Overview | Using Git
     </div>
 
   <div class="news_broadcast">
-<h4> Contents: </h4>
+
 <p>
 <a href="#C1"><h2> 1. Set up Github and Git.</h2></a>
 </p>
@@ -54,11 +55,10 @@ title: Projects | Projects Overview | Using Git
 <a href="#C8"><h2> 8. Full presentation on Git.</h2></a> 
 </p>
 </div>
-  
+  </div>
    </div>
 
 </div>
-
 
 
 

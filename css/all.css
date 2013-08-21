@@ -216,6 +216,7 @@ padding: 15px;
   #main h3 {
     font-family: 'UbuntuBold';
     font-size: 1em; }
+
   #main ul#tabs {
     width: 900px px;
     margin: 20px 0;
@@ -232,6 +233,7 @@ padding: 15px;
         text-decoration: none;
         /*color: inherit;*/
         padding-top: 12px; }
+
   #main #contents {
     float: left;
     width: 660px;
@@ -286,12 +288,19 @@ padding: 15px;
       #main #contactus .logos a {
         margin: 0 20px; }
 
+#pageNav{
+width: 300px;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
 
  .right_news_column {
     float: right;
     width: 300px;
     padding: 5px;
     margin-bottom: 50px;
+    
     text-align: justify; }
     .right_news_column h1 {
       font-family: 'UbuntuBold';
@@ -363,8 +372,7 @@ body.light #footer {
     background-image: linear-gradient(bottom, #fafafa, #eaeaea);
     border-top: 1px solid #cacaca; }
 
-
-  body.light .passive {
+body.light #tabs {
     background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #fafafa), color-stop(100%, #eaeaea));
     background-image: -webkit-linear-gradient(top, #fafafa, #eaeaea);
     background-image: -moz-linear-gradient(top, #fafafa, #eaeaea);
@@ -382,8 +390,9 @@ body.light #footer {
   body.light .passive a { color: black; }    
   body.light .active a { color: white; }    
 
-  body.light .passive li {
+  body.light #tabs li {
       border-right: 1px solid #cacaca; }
+
   body.light .active li {
       border-right: 1px solid black; }
 
@@ -436,7 +445,7 @@ body.dark .active {
     background-image: linear-gradient(top, #fafafa, #eaeaea);
     border: 1px solid #cacaca; }
 
-  body.dark .passive {
+  body.dark #tabs {
     background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #333333), color-stop(100%, #333333));
     background-image: -webkit-linear-gradient(top, #333333, #333333);
     background-image: -moz-linear-gradient(top, #333333, #333333);
@@ -451,7 +460,7 @@ body.dark .active {
 
    body.dark .active li {
       border-right: 1px solid #cacaca; }
-  body.dark .passive li {
+  body.dark #tabs li {
       border-right: 1px solid black; }
 
   body.dark #contactus {
