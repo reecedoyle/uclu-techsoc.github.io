@@ -1643,6 +1643,9 @@ body.home.welcome #contents {
     margin-bottom: 20px;
     line-height: 1.2em; }
 
+body.sponsors ul.sponsors img {
+  width: 100px; }
+
 body.light {
   background-color: white;
   color: black; }
