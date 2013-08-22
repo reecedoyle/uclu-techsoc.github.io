@@ -4,7 +4,7 @@
         color: $font_colour;
 
         .nav_links {
-            a:hover {
+            a:hover, a.active {
                 border-bottom: 2px solid $highlight;
             }
         }
