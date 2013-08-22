@@ -1,53 +1,13 @@
 ---
 layout: default
 page: sponsors
+name: Sponsors
+tabs:
+    - name: overview
+      text: Our Sponsors
+      href: /sponsors/
+    - name: events
+      text: Events
+      href: /sponsors/events/
 ---
-
-<h1>Sponsors</h1>
-
-<ul id="tabs" class="nav_links">
-    <li id="sponsors_overview" ><a href="/sponsors/" class="{% if page.tab == 'overview'%}active{% endif %}">Our Sponsors</a></li>
-    <li id="sponsors_events" ><a href="/sponsors/events/" class="{% if page.tab == 'events'%}active{% endif %}">Events</a></li>
-        
-</ul>
-
-<div id="main">
-
-   <div class="right_news_column">
-
-    
-      
-         <div class="news_broadcast">
-
-           <h1>Join us!</h1>
-          <div class="logos">
-           <a href="{% include facebook.href %}"><img alt="Visit our Facebook Group" title="Visit our Facebook Group" src="/images/facebook.png" width="40" height="40" /></a>
-
-           <a href="http://twitter.com/uclutechsoc"><img alt="Follow our Twitter" title="Follow our Twitter" src="/images/twitter.png" width="40" height="40" /></a>
-
-           <a href="mailto:president@uclutech.com"><img alt="Email our president" title="Email our president" src="/images/email.png" width="40" height="40" /></a>
-           
-          </div>
-
-                <p>
-                   <h3>Subscribe on our updates</h3>
-                    <form method="post" action="http://groupspaces.com/techsoc/subscribe/" target="_blank">
-                        <input name="email" type="text" placeholder="me@example.com" required="required"/>
-                        <input type="hidden" name="sub_subscribe" value="1" />
-                        <input value="Join TechSoc!" class="button" type="submit" />
-                    </form>
-                </p>
-           </div>
-
- 
-      
-   
-</div>
-
-</div>
-
-
-<div id="contents">
-    {{ content }}
-
-</div>
+{{ content }}
