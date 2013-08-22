@@ -6,7 +6,6 @@
         <link href="/css/all.css" rel="stylesheet" type="text/css" />
         <script src="//www.google.com/jsapi?key=AIzaSyA5m1Nc8ws2BbmPRwKu5gFradvD_hgq6G0" type="text/javascript"></script>
         <script type="text/javascript" src="/js/all.js"></script>
-            
     </head>
     <body class="{{ page.page }} {{ page.tab }} light">
         <div id="header">
@@ -30,7 +29,20 @@
             </div>
         </div>
         <div id="main">
-           {{ content }}   
+            <h1>{{ page.name }}</h1>
+            <div class="contact">Get in touch!
+            <a href="{% include facebook.href %}" class="facebook"><i class="icon-facebook"></i></a>
+            <a href="{% include twitter.href %}" class="twitter"><i class="icon-twitter"></i></a>
+            <a href="{% include email.href %}" class="email"><i class="icon-envelope"></i></a>
+            </div>
+            <ul id="tabs" class="nav_links">
+            {% for tab in page.tabs %}
+                <li><a href="{{ tab.href }}" class="{% if page.tab == tab.name %}active{% endif %}">{{ tab.text }}</a></li>
+            {% endfor %}
+            </ul>
+            <div id="contents">
+                {{ content }}
+            </div>
         </div> 
     </body>
 </html>

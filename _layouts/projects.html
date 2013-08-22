@@ -1,25 +1,22 @@
 ---
 layout: default
 page: projects
+name: Projects
+tabs:
+    - name: overview
+      text: Overview
+      href: /projects/
+    - name: reprap
+      text: RepRap
+      href: /projects/reprap/
+    - name: robots
+      text: Robots
+      href: /projects/robots/
+    - name: raspberrypython
+      text: Raspberry Python
+      href: /projects/raspberrypython/
+    - name: apps
+      text: Apps
+      href: /projects/apps/
 ---
-<h1>Projects</h1>
-
-<ul id="tabs" class="nav_links">
-    <li id="projects_overview" ><a href="/projects/" class="{% if page.tab == 'overview'%}active{% endif %}">Overview</a></li>
-    <li id="projects_reprap" ><a href="/projects/reprap" class="{% if page.tab == 'reprap'%}active{% endif %}">RepRap</a></li>
-    <li id="projects_robots" ><a href="/projects/robots" class="{% if page.tab == 'robots'%}active{% endif %}">Robots</a></li>
-    <li id="projects_rasppython" ><a href="/projects/raspberrypython" class="{% if page.tab == 'raspberrypython'%}active{% endif %}">Raspberry Python</a></li>
-    <li id="projects_apps" ><a href="/projects/apps" class="{% if page.tab == 'apps'%}active{% endif %}">Apps</a></li>
-        
-</ul>
-
-
-<div id="contents">
-    {{ content }}
-
-</div>
-
-
-
-
-
+{{ content }}
