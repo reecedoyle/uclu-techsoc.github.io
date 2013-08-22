@@ -14,7 +14,7 @@ We're using the rather fantastic Jekyll/Liquid combination that GitHub uses for 
 
 We've added SCSS into the mix to make creating and maintaining the CSS side of things easier.
 
-So to get up and running you'll need to download and install [http://jekyllrb.com/](Jekyll) and [http://sass-lang.com/](SCSS). For both of these you'll need gem, which is a package management thing for Ruby. So you'll need a [http://www.ruby-lang.org/](Ruby) installation too. That's all, now let's get the code:
+So to get up and running you'll need to download and install [Jekyll](http://jekyllrb.com/) and [SCSS](http://sass-lang.com/). For both of these you'll need gem, which is a package management thing for Ruby. So you'll need a [Ruby](http://www.ruby-lang.org/) installation too. That's all, now let's get the code:
 
     git clone https://github.com/UCLU-techSoc/uclu-techsoc.github.io.git
 
