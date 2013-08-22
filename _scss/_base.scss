@@ -52,6 +52,45 @@ body {
         font-size: 2em;
     }
 
+    div.contact {
+        float: right;
+        margin-top: -30px;
+
+        a {
+            display: inline-block;
+            height: 25px;
+            line-height: 25px;
+            width: 25px;
+            margin: 0 5px;
+            text-decoration: none;
+            text-align: center;
+
+            &.facebook {
+                background-color: $color_facebook;
+                color: white;
+                &:hover {
+                    background-color: lighten($color_facebook, 20%);
+                }
+            }
+
+            &.twitter {
+                background-color: $color_twitter;
+                color: white;
+                &:hover {
+                    background-color: lighten($color_twitter, 20%);
+                }
+            }
+
+            &.email {
+                background-color: $color_email;
+                color: white;
+                &:hover {
+                    background-color: lighten($color_email, 20%);
+                }
+            }
+        }
+    }
+
     ul#tabs {
         width: ($width - 100)px;
         margin: 20px 0;

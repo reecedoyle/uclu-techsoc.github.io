@@ -30,6 +30,11 @@
         </div>
         <div id="main">
             <h1>{{ page.name }}</h1>
+            <div class="contact">Get in touch!
+            <a href="{% include facebook.href %}" class="facebook"><i class="icon-facebook"></i></a>
+            <a href="{% include twitter.href %}" class="twitter"><i class="icon-twitter"></i></a>
+            <a href="{% include email.href %}" class="email"><i class="icon-envelope"></i></a>
+            </div>
             <ul id="tabs" class="nav_links">
             {% for tab in page.tabs %}
                 <li><a href="{{ tab.href }}" class="{% if page.tab == tab.name %}active{% endif %}">{{ tab.text }}</a></li>
