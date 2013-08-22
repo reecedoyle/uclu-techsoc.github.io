@@ -3,242 +3,119 @@ layout: projects
 tab: Apps
 title: Projects | Projects Overview | Using Git
 ---
-
-<div id="main">
-  
-   <div class="right_news_column" >
-
-<div class="news_broadcast">
-
-      <h1>Join us!</h1>
-          <div class="logos">
-           <a href="{% include facebook.href %}"><img alt="Visit our Facebook Group" title="Visit our Facebook Group" src="/images/facebook.png" width="40" height="40" /></a>
-
-           <a href="http://twitter.com/uclutechsoc"><img alt="Follow our Twitter" title="Follow our Twitter" src="/images/twitter.png" width="40" height="40" /></a>
-
-           <a href="mailto:president@uclutech.com"><img alt="Email our president" title="Email our president" src="/images/email.png" width="40" height="40" /></a>
-      </div>
-                <p>
-                   <h3>Subscribe on our updates</h3>
-                    <form method="post" action="http://groupspaces.com/techsoc/subscribe/" target="_blank">
-                        <input name="email" type="text" placeholder="me@example.com" required="required"/>
-                        <input type="hidden" name="sub_subscribe" value="1" />
-                        <input value="Join TechSoc!" class="button" type="submit" />
-                    </form>
-                </p>
+<div class="right_news_column" >
+    <div id="pageNav">
+        <div class="news_broadcast">
+            <p><a href="#C1"><h2> 1. Set up Github and Git.</h2></a></p>
+            <p><a href="#C2"><h2> 2. Set up your first repo.</h2></a></p>
+            <p><a href="#C3"><h2> 3. Clone repo.</h2></a></p>
+            <p><a href="#C4"><h2> 4. Configure remotes.</h2></a></p>
+            <p><a href="#C5"><h2> 5. Create new branch.</h2></a></p>
+            <p><a href="#C6"><h2> 6. Add updated files. Commit. Push.</h2></a></p>
+            <p><a href="#C7"><h2> 7. Merge.</h2></a></p>
+            <p><a href="#C8"><h2> 8. Full presentation on Git.</h2></a></p>
+        </div>
     </div>
-<div id="pageNav">
-  <div class="news_broadcast">
-
-<p>
-<a href="#C1"><h2> 1. Set up Github and Git.</h2></a>
-</p>
-<p>
-<a href="#C2"><h2> 2. Set up your first repo.</h2></a>
-</p>
-<p>
-<a href="#C3"><h2> 3. Clone repo.</h2></a> 
-</p>
-<p>
-<a href="#C4"><h2> 4. Configure remotes.</h2></a>
-</p>
-<p>
-<a href="#C5"><h2> 5. Create new branch.</h2></a> 
-</p>
-<p>
-<a href="#C6"><h2> 6. Add updated files. Commit. Push.</h2></a>
-</p>
-<p>
-<a href="#C7"><h2> 7. Merge.</h2></a> 
-</p>
-<p>
-<a href="#C8"><h2> 8. Full presentation on Git.</h2></a> 
-</p>
 </div>
-  </div>
-   </div>
-
-</div>
-
-
-
-
-
 <div id="C1" class="news_broadcast">
-
-
- <h1> 1) Set up GitHub and Git accounts!</h1>
- </br> 
-
-<iframe src="http://www.slideshare.net/slideshow/embed_code/25305878" width="576" height="482" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
-
-
+    <h1> 1) Set up GitHub and Git accounts!</h1>
+    <iframe src="http://www.slideshare.net/slideshow/embed_code/25305878" width="576" height="482" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
 </div>
 <div id="C2" class="news_broadcast">
-
-</br> 
-     
-   <h1> 2) </h1></br> <h2>Click to</h2>
- 
-        <a href="https://help.github.com/articles/create-a-repo">
-             <div>               
-               <h1> Set up your first repo! </h1></br>
-               
-             </div>
-        </a>  
-  
-</br> 
-
-</div></br>
-
-
-
+    <h1> 2) </h1>
+    <h2>Click to</h2>
+    <a href="https://help.github.com/articles/create-a-repo">
+       <div>               
+            <h1> Set up your first repo! </h1>
+        </div>
+    </a>
+</div>
 <div id="C3" class="news_broadcast">
-
-</br> 
-     
-   <h1> 3) Fork a repo: Clone</h1></br> 
- 
+    <h1> 3) Fork a repo: Clone</h1>
     <h4> Clone repo you want to work with:</h4>
-    <div class="plugin_message"><h4> git clone (https address of the repo) </h4></div>
-    <h4> e.g. </h4></br>
-    <h2> git clone https://github.com/UCLU-techSoc/uclu-techsoc.github.io.git </h2></br>
-<h4> Use ssh address if you have public key setup</h4></br>
- 
+    <div class="plugin_message">
+        <h4> git clone (https address of the repo) </h4>
+    </div>
+    <h4> e.g. </h4>
+    <h2> git clone https://github.com/UCLU-techSoc/uclu-techsoc.github.io.git </h2>
+    <h4> Use ssh address if you have public key setup</h4>
     <h4> You can also clone specific branch:</h4>
-    <div class="plugin_message"><h4> git clone -b (branch) (remote_repo)
- </h4></div>
-    <h4> e.g. </h4></br>
-    <h2> git clone -b my-branch https://git@github.com/username/myproject.git </h2></br>
-    
-    <h4> You can find repo's address on github page: <h4> </br>
-  <img src="/images/projects/github/clonemethods_screenshot.png"/>
-  <img src="/images/projects/github/clonemethods_screenshot2.png"/></br>
-   <img src="/images/projects/github/clonemethods_screenshot3.png" width="550" height="350"/>
-</br> 
-
-</div></br>
-
-
-
-
+    <div class="plugin_message">
+        <h4> git clone -b (branch) (remote_repo)</h4>
+    </div>
+    <h4> e.g. </h4>
+    <h2> git clone -b my-branch https://git@github.com/username/myproject.git </h2>
+    <h4> You can find repo's address on github page: <h4>
+    <img src="/images/projects/github/clonemethods_screenshot.png"/>
+    <img src="/images/projects/github/clonemethods_screenshot2.png"/>
+    <img src="/images/projects/github/clonemethods_screenshot3.png" width="550" height="350"/>
+</div>
 <div id="C4" class="news_broadcast">
-
-</br> 
-     
-   <h1> 4) Fork a repo: Configure remotes</h1></br> 
- 
-<h4>When a repository is cloned, it has a default remote called</h4> <h2>origin</h2> <h4>that points to your fork on GitHub, but not keeping updates from it.</br> 
-To keep track of the original repository, you need to add another remote named <h2>upstream</h2> </h4> </br>
-
-<h4>Go into your directory, we just created: </h4>
-<div class="plugin_message"> <h4>cd (folder you saved your project) </h4></div>
-
-<h4>e.g.</h4></br>
-
-<h2>cd MyProject</h2></br></br>
-
-<h4>Assign the original repository to a remote called "upstream":</h4>
-<div class="plugin_message"><h4>git remote add upstream (https address of the repo) </h4></div> 
-
-<h4>e.g.</h4></br>
-
-<h2>git remote add upstream https://github.com/UCLU-techSoc/uclu-techsoc.github.io.git</h2></br></br>
-
-<h4>Pulls in changes not present in your local repo, without modifying your files:
-</h4>
-<div class="plugin_message"><h4>git fetch upstream </h4></div>
-
-
-</div></br>
-
-
-
+    <h1> 4) Fork a repo: Configure remotes</h1> 
+    <h4>When a repository is cloned, it has a default remote called</h4> <h2>origin</h2> <h4>that points to your fork on GitHub, but not keeping updates from it. To keep track of the original repository, you need to add another remote named <h2>upstream</h2> </h4>
+    <h4>Go into your directory, we just created: </h4>
+    <div class="plugin_message"> <h4>cd (folder you saved your project) </h4></div>
+    <h4>e.g.</h4>
+    <h2>cd MyProject</h2>
+    <h4>Assign the original repository to a remote called "upstream":</h4>
+    <div class="plugin_message"><h4>git remote add upstream (https address of the repo) </h4></div> 
+    <h4>e.g.</h4>
+    <h2>git remote add upstream https://github.com/UCLU-techSoc/uclu-techsoc.github.io.git</h2>
+    <h4>Pulls in changes not present in your local repo, without modifying your files:</h4>
+    <div class="plugin_message"><h4>git fetch upstream </h4></div>
+</div>
 <div id="C5" class="news_broadcast">
-</br> 
-   <h1> 5) Push commits: Create branch</h1>
-</br>  
-        
-<h4>Before you will deal with any files update pn Git, the right way is to commit files to spererate branch first and then after approval of your team members merge it with master.</h4> 
-<h4> To create a branch and begin working in it, run these commands:</h4>
- 
-<div class="plugin_message">
-  <h4>git branch (your branch name) </h4>
-  <h2> # Creates a new branch </h2></br>
-  <h4>git checkout (your branch name)</h4>
-  <h2> # Makes your branch active, so you can commit files to it. </h2>
+    <h1> 5) Push commits: Create branch</h1>
+    <h4>Before you will deal with any files update pn Git, the right way is to commit files to spererate branch first and then after approval of your team members merge it with master.</h4> 
+    <h4> To create a branch and begin working in it, run these commands:</h4>
+    <div class="plugin_message">
+        <h4>git branch (your branch name) </h4>
+        <h2> # Creates a new branch </h2>
+        <h4>git checkout (your branch name)</h4>
+        <h2> # Makes your branch active, so you can commit files to it. </h2>
+    </div>
 </div>
-
-</div></br>
-
-
-
-
-
 <div id="C6" class="news_broadcast">
-</br> 
-   <h1> 6) Push commits: Add updated files. Commit. Push.</h1>
-</br>  
-        
-<h4>Now when you cloned and have changes to be made to repo, we need to push it to git.</h4> 
-<h4> Firstly add all changes by running:</h4>
-<div class="plugin_message">
-  <h4>git add . </h4>
-  <h2> # Add all files to commit </h2>
+    <h1> 6) Push commits: Add updated files. Commit. Push.</h1>        
+    <h4>Now when you cloned and have changes to be made to repo, we need to push it to git.</h4> 
+    <h4> Firstly add all changes by running:</h4>
+    <div class="plugin_message">
+        <h4>git add . </h4>
+        <h2> # Add all files to commit </h2>
+    </div>
+    <h4> Then commit them:</h4>
+    <div class="plugin_message">
+        <h4>git commit </h4>
+    </div>
+    <h4> After previous command you will have window for message summary of the update. Try to make it short and precise, then press Ctrl+X then Y to save message.</h4>
+    <h4> Now push all changes by running: </h4>
+    <div class="plugin_message">
+        <h4>git push</h4>
+    </div>
+    <h4> Congratulations, your files should be commited, check this out on GitHub. </h4>
+    <h2> Other ways: </h2> 
+    <h4> If you don't have specific branch as remote you can also push files: </h4>
+    <div class="plugin_message">
+        <h4>git push (https address of the repo) (your branch or master)</h4>
+    </div>
 </div>
-<h4> Then commit them:</h4>
-<div class="plugin_message">
-  <h4>git commit </h4>
-</div>
-<h4> After previous command you will have window for message summary of the update. Try to make it short and precise, then press Ctrl+X then Y to save message.</h4></br>
-<h4> Now push all changes by running: </h4>
-<div class="plugin_message">
-  <h4>git push</h4>
-</div>
-
-<h4> Congratulations, your files should be commited, check this out on GitHub. </h4></br></br>
-
-<h2> Other ways: </h2> </br>
-<h4> If you don't have specific branch as remote you can also push files: </h4>
-<div class="plugin_message">
-  <h4>git push (https address of the repo) (your branch or master)</h4>
-</div>
-
-
-</div></br>
-
-
 <div id="C7" class="news_broadcast">
-
-</br> 
-     
-   <h1> 7) Push commits: Merge</h1>
-</br>  
-
-<h4>Once you're finished working on your branch and are ready to combine it back into the master branch, use merge:</h4>
-<div class="plugin_message">
-<h4>git checkout master</h4>
-<h2># Makes "master" the active branch, so you can work on it</h2>
+    <h1> 7) Push commits: Merge</h1>
+    <h4>Once you're finished working on your branch and are ready to combine it back into the master branch, use merge:</h4>
+    <div class="plugin_message">
+        <h4>git checkout master</h4>
+        <h2># Makes "master" the active branch, so you can work on it</h2>
+    </div>
+    <div class="plugin_message">
+        <h4>git merge mybranch</h4>
+        <h2># Merges the commits from "mybranch" into "master"</h2>
+    </div>
+    <div class="plugin_message">
+        <h4>git branch -d mybranch</h4>
+        <h2># Deletes the "mybranch" branc</h2>
+    </div>
 </div>
-<div class="plugin_message">
-<h4>git merge mybranch</h4>
-<h2># Merges the commits from "mybranch" into "master"</h2>
-</div>
-<div class="plugin_message">
-<h4>git branch -d mybranch</h4>
-<h2># Deletes the "mybranch" branc</h2>
-</div>
-
-</div>
-
 <div id="C8" class="news_broadcast">
-
-</br> 
-     
-   <h1> 8) Check out more about Git and Github</h1>
-</br>  
-        <iframe src="http://www.slideshare.net/slideshow/embed_code/12661612" width="576" height="482" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe> 
-
+    <h1> 8) Check out more about Git and Github</h1>
+    <iframe src="http://www.slideshare.net/slideshow/embed_code/12661612" width="576" height="482" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe> 
 </div>
-
-
