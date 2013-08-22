@@ -9,10 +9,8 @@
             
     </head>
     <body class="{{ page.page }} {{ page.tab }} light">
-
         <div id="header">
             <div>
-
                 <form id="theme" method='get' action=''>
                     <label>Pick theme:</label>
                     <select>
@@ -21,7 +19,6 @@
                     </select>
                     <input type="hidden" name="theme" value="{{ current_theme }}"/>
                 </form>
-
                 <a href="/"><img src="/images/logo.png" alt="techSoc Logo" title="techSoc Logo" /></a>
                 <ul class="nav_links">
                     <li><a href="/" class="{% if page.page == 'home'%}active{% endif %}">HOME</a></li>
@@ -32,13 +29,8 @@
                 </ul>
             </div>
         </div>
-
-        
-
         <div id="main">
            {{ content }}   
-        </div>
-
-        
+        </div> 
     </body>
 </html>
