@@ -6,8 +6,8 @@ page: sponsors
 <h1>Sponsors</h1>
 
 <ul id="tabs" class="nav_links">
-    <li class="passive" id="sponsors_overview" ><a href="/sponsors/">Our Sponsors</a></li>
-    <li class="passive" id="sponsors_events" ><a href="/sponsors/events/">Events</a></li>
+    <li id="sponsors_overview" ><a href="/sponsors/" class="{% if page.tab == 'overview'%}active{% endif %}">Our Sponsors</a></li>
+    <li id="sponsors_events" ><a href="/sponsors/events/" class="{% if page.tab == 'events'%}active{% endif %}">Events</a></li>
         
 </ul>
 

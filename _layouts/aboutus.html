@@ -4,9 +4,9 @@ page: aboutus
 ---
 <h1>About Us</h1>
 <ul id="tabs" class="nav_links">
-    <li class="passive" id="aboutus_overview"><a href="/aboutus/">Who We Are</a></li>
-    <li class="passive" id="aboutus_what"><a href="/aboutus/what">What We Do</a></li>
-    <li class="passive" id="aboutus_committee"><a href="/aboutus/committee">Our Committee</a></li>
+    <li id="aboutus_overview"><a href="/aboutus/" class="{% if page.tab == 'who'%}active{% endif %}">Who We Are</a></li>
+    <li id="aboutus_what"><a href="/aboutus/what" class="{% if page.tab == 'what'%}active{% endif %}">What We Do</a></li>
+    <li id="aboutus_committee"><a href="/aboutus/committee" class="{% if page.tab == 'committee'%}active{% endif %}">Our Committee</a></li>
 </ul>
 
 

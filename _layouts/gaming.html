@@ -6,9 +6,9 @@ page: gaming
  <h1>Gaming</h1>
 
 <ul id="tabs" class="nav_links">
-    <li class="passive" id="gaming_overview"><a href="/gaming/">Overview</a></li>
-    <li class="passive" id="gaming_competitions"><a href="/gaming/competitions">Competitions</a></li>
-    <li class="passive" id="gaming_leaderboard" ><a href="/gaming/leaderboard">Leaderboard</a></li>
+    <li id="gaming_overview"><a href="/gaming/" class="{% if page.tab == 'overview'%}active{% endif %}">Overview</a></li>
+    <li id="gaming_competitions"><a href="/gaming/competitions" class="{% if page.tab == 'competitions'%}active{% endif %}">Competitions</a></li>
+    <li id="gaming_leaderboard" ><a href="/gaming/leaderboard" class="{% if page.tab == 'leaderboard'%}active{% endif %}">Leaderboard</a></li>
 </ul>
             
            

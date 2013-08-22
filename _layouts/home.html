@@ -4,7 +4,7 @@ page: home
 ---
 <h1>Home</h1>
 <ul id="tabs" class="nav_links">
-    <li class="passive"><a href="/">Welcome</a></li>
+    <li><a href="/" class="{% if page.tab == 'welcome'%}active{% endif %}">Welcome</a></li>
 </ul>
 <div id="contents">
     {{ content }}
