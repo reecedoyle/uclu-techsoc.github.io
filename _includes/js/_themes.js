@@ -26,6 +26,8 @@
         localStorage.setItem("theme", theme_name);
     };
 
+
+
     $(document).ready(function() {
         var theme = $("#theme");
 
@@ -45,3 +47,4 @@
     });
 
 })();
+

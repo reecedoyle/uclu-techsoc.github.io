@@ -44,8 +44,8 @@ function feedLoaded(result) {
 
    }
 
-
       html += '</ul>';
+      container.innerHTML += html;
   }
 }
 
@@ -88,9 +88,9 @@ function new_line(message) {
       if (contains_fullstop===-1) contains_fullstop = message.indexOf("!");
       if (contains_fullstop===-1) contains_fullstop = message.indexOf("?");
        if (contains_fullstop!==-1) {
-            message = message.replace(".",".<br>");
-            message = message.replace("!","!<br>");
-            message = message.replace("?","?<br>");
+            message = message.replace(".",".</br>");
+            message = message.replace("!","!</br>");
+            message = message.replace("?","?</br>");
          }
 
 return message;

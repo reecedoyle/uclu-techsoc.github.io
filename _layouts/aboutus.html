@@ -1,40 +1,16 @@
 ---
 layout: default
 page: aboutus
+name: About Us
+tabs:
+    - name: who
+      text: Who We Are
+      href: /aboutus/
+    - name: what
+      text: What We Do
+      href: /aboutus/what/
+    - name: committee
+      text: Our Committee
+      href: /aboutus/committee/
 ---
-<h1>About Us</h1>
-<ul id="tabs" class="nav_links">
-    <li><a href="/aboutus/">Who We Are</a></li>
-    <li><a href="/aboutus/what">What We Do</a></li>
-    <li><a href="/aboutus/committee">Our Committee</a></li>
-</ul>
-<div id="contents">
-    {{ content }}
-</div>
-
-<div id="main">
-            {{ content }}
-            <div id="contactus">
-                <h2>Contact Us</h2>
-                <ol>
-                    <li>Get in touch</li>
-                    <li>Find out what we're up to</li>
-                    <li>???</li>
-                    <li>Profit</li>
-                </ol>
-                <div class="logos">
-                    <a href="{% include facebook.href %}"><img alt="Visit our Facebook Group" title="Visit our Facebook Group" src="/images/facebook.png" /></a>
-                    <a href="http://twitter.com/uclutechsoc"><img alt="Follow our Twitter" title="Follow our Twitter" src="/images/twitter.png" /></a>
-                    <a href="mailto:president@uclutech.com"><img alt="Email our president" title="Email our president" src="/images/email.png" /></a>
-                </div>
-                <h3>Mailing List</h3>
-                <p>
-                    Or maybe you want to get UCLU techSoc news in your inbox every week? Our president drones on for pages and pages about what we're up to in the coming week. We never read it.
-                    <form method="post" action="http://groupspaces.com/techsoc/subscribe/" target="_blank">
-                        <input name="email" type="text" placeholder="me@example.com" required="required"/>
-                        <input type="hidden" name="sub_subscribe" value="1" />
-                        <input value="Join TechSoc!" class="button" type="submit" />
-                    </form>
-                </p>
-            </div>
-        </div>
+{{ content }}

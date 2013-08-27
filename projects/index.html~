@@ -3,84 +3,18 @@ layout: projects
 tab: overview
 title: Projects | Overview
 ---
-<!-- right column info menu -->
-<div id="main">
- 
-    <div class="right_news_column">
-
-     <div class="news_broadcast">
-
-      <h1>Join us!</h1></br>
-
-      <div class="logos">
-      <a href="{% include facebook.href %}"><img alt="Visit our Facebook Group" title="Visit our Facebook Group" src="/images/facebook.png" /></a>
-
-      <a href="http://twitter.com/uclutechsoc"><img alt="Follow our Twitter" title="Follow our Twitter" src="/images/twitter.png" /></a>
-
-      <a href="mailto:president@uclutech.com"><img alt="Email our president" title="Email our president" src="/images/email.png" /></a>
-
-      </div>
-                <p>
-                   <h3>Subscribe on our updates</h3>
-                    <form method="post" action="http://groupspaces.com/techsoc/subscribe/" target="_blank">
-                        <input name="email" type="text" placeholder="me@example.com" required="required"/>
-                        <input type="hidden" name="sub_subscribe" value="1" />
-                        <input value="Join TechSoc!" class="button" type="submit" />
-                    </form>
-                </p>
+<div class="right_news_column">
+    <div id="android_recent_news">
+        <h1>Recent News</h1>
     </div>
-
-     <div class="news_broadcast">         
-     
-      <a href="/projects/apps">
-       <div class="tweets_style">
-        <img src="/images/projects/android.png">
-        <h1>Apps</h1>
-       </div>
-      </a>
-
-      <a href="/projects/robots">
-       <div class="tweets_style">
-         <img src="/images/projects/robots.png" height="230px" width="230px">
-         <h1>Robots</h1>
-        </div>
-       </a>
-          
-       <a href="/projects/raspberrypython">
-         <div class="tweets_style">
-          <img src="/images/projects/python.png">
-          <h1>Raspberry Python</h1>
-         </div>
-       </a>
-
-        <a href="/projects/reprap">
-         <div class="tweets_style" >
-         <img src="/images/projects/reprap.png" >
-         <h1>RepRap</h1>
-         </div>
-        </a>
-     </div>
-
-  </div> 
-
 </div>
-
-
-<! news updates -->
-
-
 
 <div class="news_broadcast">
-
-      <h2>Click to</h2>
- 
-        <a href="/projects/apps/first_android_app.html">
-             <div>               
-               <h1> Make your first Android App! </h1>
-               <img src="/images/apps/android.png"/>
-             </div>
-        </a>  
-                         
+    <h1>Click to</h1>
+    <a href="/projects/github_tutorial.html">
+        <div>               
+            <h1> Use Git and Github! </h1>
+            <img width="522" height="207" src="/images/projects/github/github.png"/>
+        </div>
+    </a>                       
 </div>
-
-

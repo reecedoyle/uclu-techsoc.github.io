@@ -1,4 +1,4 @@
-@mixin theme($name, $page_background, $font_colour, $gradient_light, $gradient_dark, $border_color, $highlight, $side_bar_color) {
+@mixin theme($name, $page_background, $font_colour, $gradient_light, $gradient_dark, $border_color, $highlight, $side_bar_color, $side_navigation_panel) {
     body.#{$name} {
         background-color: $page_background;
         color: $font_colour;

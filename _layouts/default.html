@@ -6,13 +6,10 @@
         <link href="/css/all.css" rel="stylesheet" type="text/css" />
         <script src="//www.google.com/jsapi?key=AIzaSyA5m1Nc8ws2BbmPRwKu5gFradvD_hgq6G0" type="text/javascript"></script>
         <script type="text/javascript" src="/js/all.js"></script>
-            
     </head>
     <body class="{{ page.page }} {{ page.tab }} light">
-
         <div id="header">
             <div>
-
                 <form id="theme" method='get' action=''>
                     <label>Pick theme:</label>
                     <select>
@@ -21,21 +18,31 @@
                     </select>
                     <input type="hidden" name="theme" value="{{ current_theme }}"/>
                 </form>
-
                 <a href="/"><img src="/images/logo.png" alt="techSoc Logo" title="techSoc Logo" /></a>
                 <ul class="nav_links">
-                    <li><a href="/">HOME</a></li>
-                    <li><a href="/aboutus/">ABOUT US</a></li>
-                    <li><a href="/gaming/">GAMING</a></li>
-                    <li><a href="/projects/">PROJECTS</a></li>
+                    <li><a href="/" class="{% if page.page == 'home'%}active{% endif %}">HOME</a></li>
+                    <li><a href="/aboutus/" class="{% if page.page == 'aboutus'%}active{% endif %}">ABOUT US</a></li>
+                    <li><a href="/gaming/" class="{% if page.page == 'gaming'%}active{% endif %}">GAMING</a></li>
+                    <li><a href="/projects/" class="{% if page.page == 'projects'%}active{% endif %}">PROJECTS</a></li>
+                    <li><a href="/sponsors/" class="{% if page.page == 'sponsors'%}active{% endif %}">SPONSORS</a></li>
                 </ul>
             </div>
         </div>
-
         <div id="main">
-            {{ content }}   
-
-        </div>
-
+            <h1>{{ page.name }}</h1>
+            <div class="contact">Get in touch!
+            <a href="{% include facebook.href %}" class="facebook"><i class="icon-facebook"></i></a>
+            <a href="{% include twitter.href %}" class="twitter"><i class="icon-twitter"></i></a>
+            <a href="{% include email.href %}" class="email"><i class="icon-envelope"></i></a>
+            </div>
+            <ul id="tabs" class="nav_links">
+            {% for tab in page.tabs %}
+                <li><a href="{{ tab.href }}" class="{% if page.tab == tab.name %}active{% endif %}">{{ tab.text }}</a></li>
+            {% endfor %}
+            </ul>
+            <div id="contents">
+                {{ content }}
+            </div>
+        </div> 
     </body>
 </html>
