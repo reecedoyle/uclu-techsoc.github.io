@@ -1,4 +1,4 @@
-@mixin theme($name, $page_background, $font_colour, $gradient_light, $gradient_dark, $border_color, $highlight, $side_bar_color, $side_navigation_panel) {
+@mixin theme($name, $page_background, $font_colour, $gradient_light, $gradient_dark, $border_color, $highlight, $side_bar_color) {
     body.#{$name} {
         background-color: $page_background;
         color: $font_colour;
@@ -48,6 +48,13 @@
         .plugin_message {
             border:1px solid $border_color;
             background-color: $side_bar_color;
+        }
+
+        .inLine {
+              display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px; 
         }
         
 

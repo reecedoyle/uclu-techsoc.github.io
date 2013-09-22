@@ -6,38 +6,43 @@ title: Projects | Apps Development | First Android App
 <div class="right_news_column">
     <div id="pageNav">
             <img width="250px" height="63px" src="/images/logo.png">
-            <p><a href="#C1"><h2> 1. Make your first Android App.</h2></a></p>
-            <p><a href="#C2"><h2> 2. Download Android software if you decided to use Eclipse.</h2></a></p>
-            <p><a href="#C3"><h2> 3. Use SDK Manager if you want to download some additional software.</h2></a></p>
-            <p><a href="#C4"><h2> 4. First "Hello world" Android App.</h2></a></p>
-            <p><a href="#C5"><h2> 5. Run it on your device or emulator.</h2></a></p>
+            <p><a href="#C1"><h3> 1. Install Tools!</h3></a></p>
+            <p><a href="#C2"><h3> 2. Use SDK Manager if you want to download some additional software.</h3></a></p>
+            <p><a href="#C3"><h3> 3. First "Hello world" Android App.</h3></a></p>
+            <p><a href="#C4"><h3> 4.  Run it on your device or emulator.</h3></a></p>
         
     </div>
 </div>
 
 
 <div id="C1" class="news_broadcast">
-    <h1> 1) Make your first Android App!</h1>
-    <iframe src="http://www.slideshare.net/slideshow/embed_code/24849174" width="518" height="422" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe> 
+    <h1> 1) Install Tools!</h1>
+    
+<iframe src="http://www.slideshare.net/slideshow/embed_code/26290558" width="518" height="422" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe> 
+
+    <h1> Android Studio installation tips: </h1> 
+<iframe src="http://www.slideshare.net/slideshow/embed_code/26290709" width="518" height="422" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe> 
+
+    <h1> Android Software installation tips for Eclipse: </h1> 
+<iframe src="http://www.slideshare.net/slideshow/embed_code/26290708" width="518" height="422" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe> 
+
 </div>
+
+
 <div id="C2" class="news_broadcast">
-    <h1> 2) Download Android software if you decided to use Eclipse! </h1> 
-    <iframe src="http://www.slideshare.net/slideshow/embed_code/24849175" width="518" height="422" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe> 
+    <h1> 2) Use SDK Manager if you want to download some additional software! </h1>
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/26290574" width="518" height="422" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe> 
+
 </div>
+
 <div id="C3" class="news_broadcast">
-    <h1> 3) Use SDK Manager if you want to download some additional software! </h1>
-    <iframe src="http://www.slideshare.net/slideshow/embed_code/24849178" width="518" height="422" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe> 
+    <h1> 3) First "Hello world" Android App! </h1>
+    <iframe src="http://www.slideshare.net/slideshow/embed_code/26290996" width="518" height="422" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe>
 </div>
-
+    
 <div id="C4" class="news_broadcast">
-    <h1> 4) First "Hello world" Android App! </h1>
-    <div style="margin-bottom:5px"><h2>For Eclipse:</h2></div> 
-    <iframe src="http://www.slideshare.net/slideshow/embed_code/24849179" width="518" height="422" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe> 
-    <div style="margin-bottom:5px"><h2>For Android Studio:</h2></div>
-    <iframe src="http://www.slideshare.net/slideshow/embed_code/24876086" width="518" height="422" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
-</div>
+    <h1> 4) Run it on your device or emulator! </h1>
+    <iframe src="http://www.slideshare.net/slideshow/embed_code/26290572" width="518" height="412" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe> 
 
-<div id="C5" class="news_broadcast">
-    <h1> 5) Run it on your device or emulator! </h1>
-    <iframe src="http://www.slideshare.net/slideshow/embed_code/24849173" width="518" height="422" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe> 
 </div>

@@ -194,7 +194,7 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  width: auto;
+  width: 300px;
   }
 
      
@@ -207,6 +207,7 @@ body {
 }
 
 .news_broadcast {
+
   position: relative;
   display: block;
   width: 550px;
@@ -240,7 +241,15 @@ body {
 
 }
 
+ .inLine {
+    margin: 5px 5px;
+    float: left;
+    text-align: center; 
 
+    h2 {
+      font-size: 2em;
+       }
+ }
 
 
     }
