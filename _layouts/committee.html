@@ -1,0 +1,22 @@
+---
+layout: aboutus
+page: committee
+name: Committee
+tabs:
+    - name: who
+      text: Who We Are
+      href: /aboutus/
+    - name: committee
+      text: Our Committee
+      href: /aboutus/committee/
+---
+<div class="inLine">
+    {% for member in page.committee %}
+        <div class="inLine">
+            <img class="img-rounded people" src="{{ member.image }}"/>
+            <h1> {{ member.name }} </h1>
+            <h2> {{ member.position }} </h2>
+	    <h3> {{ member.description }} </h3>
+        </div>
+    {% endfor %}
+</div>
