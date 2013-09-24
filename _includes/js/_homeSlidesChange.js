@@ -1,7 +1,7 @@
-function changeImage()
+function changeImage1()
 {
     var img = document.getElementById("home_page_slides");
-     img.style.opacity=0;
+    img.style.opacity=0;
     img.src = images[x];
     x++;
     
@@ -26,19 +26,19 @@ function fadeImg(el, val, fade){
         el.style.opacity = val / 100;
         setTimeout(function(){fadeImg(el, val, fade);}, 15);
     }
-else changeImage();
+else changeImage1();
 }
 
 var images = [],
 x = 0;
 
-images[0] = "images/homeProm/image2.png";
-images[1] = "images/homeProm/image3.png";
-images[2] = "images/homeProm/image4.png";
-images[3] = "images/homeProm/image5.png";
-images[4] = "images/homeProm/image6.png";
-images[5] = "images/homeProm/image7.png";
-images[6] = "images/homeProm/image8.png";
+images[0] = "/images/homeProm/image2.png";
+images[1] = "/images/homeProm/image3.png";
+images[2] = "/images/homeProm/image4.png";
+images[3] = "/images/homeProm/image5.png";
+images[4] = "/images/homeProm/image6.png";
+images[5] = "/images/homeProm/image7.png";
+images[6] = "/images/homeProm/image8.png";
 
-setTimeout("changeImage()", 2500);
+setTimeout("changeImage1()", 2500);
 

@@ -6,5 +6,6 @@
 {% include js/_fbNews.js %}
 {% include js/_navPanelControl.js %}
 {% include js/_homeSlidesChange.js %}
+{% include js/_printerSlidesChange.js %}
 
 
