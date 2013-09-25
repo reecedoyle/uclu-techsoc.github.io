@@ -75,12 +75,34 @@ images2[2] = "/images/projects/3dPrinter/meeting6/image3.jpg";
 
 var images3 = [],
 x3 = 0;
-var id3 = "quadrotor_slides";
+var id3 = "quadrotor_slides1";
 images3[0] = "/images/projects/quadrotor/image1.jpg";
 images3[1] = "/images/projects/quadrotor/image2.jpg";
 images3[2] = "/images/projects/quadrotor/image3.jpg";
 images3[3] = "/images/projects/quadrotor/image4.jpg";
 images3[4] = "/images/projects/quadrotor/image5.jpg";
+
+var images4 = [],
+x4 = 0;
+var id4 = "quadrotor_slides2";
+images4[0] = "/images/projects/quadrotor/image6.jpg";
+images4[1] = "/images/projects/quadrotor/image7.jpg";
+images4[2] = "/images/projects/quadrotor/image8.jpg";
+images4[3] = "/images/projects/quadrotor/image9.jpg";
+images4[4] = "/images/projects/quadrotor/image10.jpg";
+images4[5] = "/images/projects/quadrotor/image11.jpg";
+images4[6] = "/images/projects/quadrotor/image12.jpg";
+images4[7] = "/images/projects/quadrotor/image13.jpg";
+
+var images5 = [],
+x5 = 0;
+var id5 = "robot_slides";
+images5[0] = "/images/projects/robot/image1.jpg";
+images5[1] = "/images/projects/robot/image2.jpeg";
+images5[2] = "/images/projects/robot/image3.jpg";
+images5[3] = "/images/projects/robot/image4.jpg";
+images5[4] = "/images/projects/robot/image5.jpeg";
+
 
 
 setTimeout("changeImage(images0,x0,id0)", 2500);
@@ -91,3 +113,6 @@ setTimeout("changeImage(images2,x2,id2)", 2500);
 
 setTimeout("changeImage(images3,x3,id3)", 2500);
 
+setTimeout("changeImage(images4,x4,id4)", 2500);
+
+setTimeout("changeImage(images5,x5,id5)", 2500);
