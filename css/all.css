@@ -99,7 +99,7 @@ table {
   font-weight: normal;
   font-style: normal; }
 
-/*
+/*!
  *  Font Awesome 3.2.1
  *  the iconic font designed for Bootstrap
  *  ------------------------------------------------------------------------------
@@ -1645,6 +1645,28 @@ body.home.welcome #contents {
 
 body.sponsors ul.sponsors img {
   width: 100px; }
+
+body.signup form.signup {
+  margin-top: 100px;
+  text-align: center; }
+  body.signup form.signup input.email {
+    display: block;
+    width: 500px;
+    margin: 50px auto;
+    padding: 10px;
+    font-family: 'UbuntuRegular';
+    font-size: 2em;
+    outline: none;
+    border: 2px solid #38A4EF; }
+  body.signup form.signup input.submit {
+    padding: 10px;
+    border: none;
+    font-family: 'UbuntuRegular';
+    font-size: 2em;
+    background-color: #38A4EF;
+    cursor: pointer; }
+    body.signup form.signup input.submit:hover {
+      background-color: #128de2; }
 
 body.light {
   background-color: white;

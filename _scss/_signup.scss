@@ -1,0 +1,30 @@
+body.signup {
+	form.signup {
+		margin-top: 100px;
+		text-align: center;
+
+		input.email {
+			display: block;
+			width: 500px;
+			margin: 50px auto;
+			padding: 10px;
+			font-family: 'UbuntuRegular';
+			font-size: 2em;
+			outline: none;
+			border: 2px solid #38A4EF;
+		}
+
+		input.submit {
+			padding: 10px;
+			border: none;
+			font-family: 'UbuntuRegular';
+			font-size: 2em;
+			background-color: #38A4EF;
+			cursor: pointer;
+
+			&:hover {
+				background-color: darken(#38A4EF, 10%);
+			}
+		}
+	}
+}
