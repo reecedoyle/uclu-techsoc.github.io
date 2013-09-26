@@ -37,7 +37,6 @@ images0[2] = "/images/homeProm/image4.png";
 images0[3] = "/images/homeProm/image5.png";
 images0[4] = "/images/homeProm/image6.png";
 images0[5] = "/images/homeProm/image7.png";
-images0[6] = "/images/homeProm/image8.png";
 
 var images1 = [],
 x1 = 0;
